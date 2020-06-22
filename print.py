@@ -14,3 +14,4 @@ number2 = input('введите второе число\n')
 answer = int(number1) + int(number2)
 print('Сумма числа ', number1, ' и числа ', number2, ' равна ', answer)
 
+print('ok test')
