@@ -13,3 +13,6 @@ number1 = input(f'{name}, введите первое число\n')
 number2 = input(f'{name}, введите второе число\n')
 answer = int(number1) + int(number2)
 print('Сумма числа ', number1, ' и числа ', number2, ' равна ', answer)
+
+
+print(f'{name} решай сам')
