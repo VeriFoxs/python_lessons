@@ -29,16 +29,47 @@ class MainWindow(QMainWindow):
         self.ui.b7.clicked.connect(self.pushed_button)
         self.ui.b8.clicked.connect(self.pushed_button)
         self.ui.b9.clicked.connect(self.pushed_button)
-        self.ui.bclear.clicked.connect(self.clear)
+
+        self.ui.bclear.clicked.connect(self.pushed_button)
+        self.ui.bbackspace.clicked.connect(self.pushed_button)
+
+        self.ui.bplus.clicked.connect(self.pushed_button)
+        self.ui.bplus_minus.clicked.connect(self.pushed_button)
+        self.ui.bmultiplication.clicked.connect(self.pushed_button)
+        self.ui.bdivision.clicked.connect(self.pushed_button)
+        self.ui.bcomma.clicked.connect(self.pushed_button)
+        self.ui.bequal.clicked.connect(self.pushed_button)
+
+        self.screen = ''
+        self.plus_minus = True
 
     # функция при нажатии на кнопку
     def pushed_button(self):
         button = self.sender()
-        btn = button.text()
-        self.ui.line.setText(btn)
+        self.screen += button.text()
+        
+        if button.text() == 'C':
+            self.screen = ''
+        elif button.text() == '<':
+            self.screen = self.screen[:-2]
+        elif button.text() == ',':
+            self.screen = self.screen[:-1]+'.'
+        elif button.text() == '+/-':
+            # закончили здесь
+            self.screen = ''
+            if self.plus_minus:
+                self.screen = '-'+self.screen
+                self.plus_minus = False
+            else:
+                self.screen = self.screen
+                self.plus_minus = True
+        elif button.text() == '=':
+            self.screen = str(eval(self.screen[:-1]))
 
-    def clear(self):
-        self.ui.line.setText('')
+        self.ui.line.setText(self.screen)
+
+
+    
      
 
 if __name__ == "__main__":

@@ -7,23 +7,27 @@
     <x>0</x>
     <y>0</y>
     <width>300</width>
-    <height>490</height>
+    <height>511</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>300</width>
-    <height>490</height>
+    <height>511</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>300</width>
-    <height>490</height>
+    <height>511</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Калькулятор</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/calculator.ico</normaloff>img/calculator.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow
@@ -56,7 +60,7 @@ QPushButton:hover
       <x>10</x>
       <y>10</y>
       <width>281</width>
-      <height>471</height>
+      <height>492</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -88,66 +92,17 @@ color: rgb(255, 255, 255);</string>
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="1" column="2">
-        <widget class="QPushButton" name="b3">
+       <item row="5" column="3">
+        <widget class="QPushButton" name="bequal">
          <property name="text">
-          <string>3</string>
+          <string>=</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="QPushButton" name="bclear">
+       <item row="2" column="0">
+        <widget class="QPushButton" name="b4">
          <property name="text">
-          <string>C</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QPushButton" name="b7">
-         <property name="text">
-          <string>7</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QPushButton" name="bclear2">
-         <property name="text">
-          <string>CE</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QPushButton" name="b8">
-         <property name="text">
-          <string>8</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QPushButton" name="b6">
-         <property name="text">
-          <string>6</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QPushButton" name="b0">
-         <property name="text">
-          <string>0</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QPushButton" name="b5">
-         <property name="text">
-          <string>5</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="b2">
-         <property name="text">
-          <string>2</string>
+          <string>4</string>
          </property>
         </widget>
        </item>
@@ -158,17 +113,108 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="2">
+       <item row="4" column="3">
+        <widget class="QPushButton" name="bplus">
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="b0">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="b7">
+         <property name="text">
+          <string>7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
         <widget class="QPushButton" name="b9">
          <property name="text">
           <string>9</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QPushButton" name="b4">
+       <item row="1" column="3">
+        <widget class="QPushButton" name="bmultiplication">
          <property name="text">
-          <string>4</string>
+          <string>*</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="bcomma">
+         <property name="text">
+          <string>,</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="bminus">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="bclear">
+         <property name="text">
+          <string>C</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="b2">
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="b3">
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="bplus_minus">
+         <property name="text">
+          <string>+/-</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="b8">
+         <property name="text">
+          <string>8</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="b5">
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="bdivision">
+         <property name="text">
+          <string>/</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="bclear2">
+         <property name="text">
+          <string>CE</string>
          </property>
         </widget>
        </item>
@@ -182,52 +228,10 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="3">
-        <widget class="QPushButton" name="bdivision">
+       <item row="2" column="2">
+        <widget class="QPushButton" name="b6">
          <property name="text">
-          <string>/</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QPushButton" name="bplus_minus">
-         <property name="text">
-          <string>+/-</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <widget class="QPushButton" name="bcomma">
-         <property name="text">
-          <string>,</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QPushButton" name="bmultiplication">
-         <property name="text">
-          <string>*</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QPushButton" name="bminus">
-         <property name="text">
-          <string>-</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="3">
-        <widget class="QPushButton" name="bplus">
-         <property name="text">
-          <string>+</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="3">
-        <widget class="QPushButton" name="bequal">
-         <property name="text">
-          <string>=</string>
+          <string>6</string>
          </property>
         </widget>
        </item>
